@@ -1,0 +1,19 @@
+Bug: 
+
+1.Can not get all parameters defined in js, like: the var or const 
+Eg:
+function A(){
+var a, b, c = 100;
+const x, y, z = 1000;
+}
+can not restor the var a, b.
+Just var c = 100 resorted
+the const same as var.
+
+
+2. Cannot set the logic parens correctly.
+
+Eg:
+var i, a, b = 10, c = 2;
+for(i = 0; i < (a = b+c) && c < 10; b = i+2, c = i+1, i++){
+}
